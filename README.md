@@ -5,3 +5,5 @@ amazonpricet is prices tracking services where the user is prompted via email if
 ```bash
 pip install git+https://github.com/MohammadAshrafTolba/amazonpricet
 ```
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
