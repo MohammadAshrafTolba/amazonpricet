@@ -53,6 +53,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 if new_price < initial_price:
                     title = tracker.get_title(user.product_link, header)
                     tracker.send_mail(user.product_link, title, initial_price, new_price, user.email)
+                    user_list.remove(user)
+                    initial_prices.remove(initial_price)
             time.sleep(86400)   # iterating through all users once every 24 hr
 
 
