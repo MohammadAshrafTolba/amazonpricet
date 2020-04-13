@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Registration Form</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index_style.css') }}">
 
 </head>
 <body>
@@ -12,7 +12,7 @@
     <center>
         <h3>Register Here</h3>
 
-        <form action="registration.php" method="post">
+        <form method="post">
 
             <div class="container">
                 <label for="uEmail"><b>User's Email</b></label>
