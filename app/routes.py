@@ -9,6 +9,6 @@ def my_form():
 @app.route('/', methods=['POST'])
 def my_form_post():
     uEmail = request.form['uEmail']
-    pURL = request.form('pURL')
+    pURL = request.form['pURL']
     print(uEmail, pURL)
-    return 200
+    return uEmail, pURL
