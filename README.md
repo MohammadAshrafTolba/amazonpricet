@@ -9,4 +9,4 @@ The bot was converted to an actual web service using flask framework rather than
 - Provide a neat error messages system
 - Prioritize guests admin/user 
 ### License
-[GNU GPL V.30](https://choosealicense.com/licenses/agpl-3.0//)
+[GNU GPL v3.0](https://choosealicense.com/licenses/agpl-3.0//)
