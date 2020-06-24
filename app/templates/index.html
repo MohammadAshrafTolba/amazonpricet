@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<!-- saved from url=(0066)file:///C:/Users/I-TECH/Desktop/Animated%20Login%20Form/index.html -->
 <html lang="en" dir="ltr">
-
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Registration Form</title>
-        <link rel= "stylesheet" type= "text/css" href= "../static/styles/index_style.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>AmazonPriceT</title>
+        <link rel="stylesheet" type="text/css" href="../static/styles/index_style.css">
+        <link rel="short icon" type="image/x-icon" href="../static/favicon.ico">
     </head>
     <body>
-
-        <form class="box" method="post">
+        <h5 class="error_message">{{error_message_1}} <br/> {{error_message_2}}</h5>
+        <h5 class="message">{{confirmation_message}}</h5>
+        <form class="box" action="loading_page.html" method="post">
           <h1>AmazonPriceT</h1>
+          <h6>Amazon Prices Tracker</h6>
           <input type="text" name="uEmail" placeholder="Email" required>
-          <input type="password" name="pURL" placeholder="Product URL" required>
+          <input type="text" name="pURL" placeholder="Product URL" required>
           <input type="submit" name="submit" value="Submit">
         </form>
-
     </body>
 </html>
