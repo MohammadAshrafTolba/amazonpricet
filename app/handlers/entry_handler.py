@@ -1,5 +1,5 @@
-from app.models import Entry, db
-#from app.init_app import db
+from app.models import Entry
+from app.init_app import db
 from app.crawler.amazon_crawler import AmazonCrawler
 
 

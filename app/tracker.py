@@ -1,6 +1,7 @@
 from app.handlers.entry_handler import EntryHandler, AmazonCrawler
 #from app.crawler.amazon_crawler import AmazonCrawler
 import smtplib
+import threading
 import time
 
 
@@ -36,15 +37,18 @@ class Tracker():
                 initial_price = entry.product_initial_price
                 crawler = AmazonCrawler(product_url)
                 current_price, _ = crawler.get_product_data()
-                if current_price == initial_price:
+                if current_price < initial_price:
                     title = entry.product_title
                     user_email = entry.user_email
                     self.send_mail(product_url, title, initial_price, current_price, user_email)
-                    entry_handler = EntryHandler()
                     self.entry_handler.delete_entry(entry)
             time.sleep(86400)   # iterating through all users once every 24 hr
 
 
-
-tracker = Tracker()
-tracker.run()
+class TrackerThread():
+    def __init__(self, interval=0):
+        self.interval = interval
+        self.tracker = Tracker()
+        thread = threading.Thread(target=self.tracker.run, args=())
+        thread.daemon = True  # Daemonize thread
+        thread.start()  # Start the execution
