@@ -5,5 +5,8 @@ The bot was converted to an actual web service using flask framework rather than
 ## Notes
 - The secret keys/passwords used are no longer usable, the deployed version was give a new set of secret keys
 - This version of the web service will soon be deployed
-## License
+### Near Future updates
+- Provide a neat error messages system
+- Prioritize guests admin/user 
+### License
 [MIT](https://choosealicense.com/licenses/mit/)
