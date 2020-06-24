@@ -1,0 +1,18 @@
+name:
+  css: '#productTitle'
+  type: Text
+price1:
+  css: '#price_inside_buybox'
+  type: Text
+price2:
+  css: 'priceblock_dealprice'
+  type: Text
+price3:
+  css: 'priceblock_ourprice'
+  type: Text
+price4:
+  css: '#newbuyboxprice'
+  type: Text
+price5:
+  css: '.a-color-price'
+  type: Text
